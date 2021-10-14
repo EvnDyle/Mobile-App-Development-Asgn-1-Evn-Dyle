@@ -1,7 +1,10 @@
 package assignment
+
 import mu.KotlinLogging
+import models.Character
 
 private val logger = KotlinLogging.logger {}
+var character = Character()
 
 fun main(args: Array<String>){
     logger.info { "Launching Evan's Character Manager Console App" }
@@ -11,7 +14,7 @@ fun main(args: Array<String>){
     do {
         input = menu()
         when(input) {
-            1 -> println("You Chose Add Character")
+            1 -> addCharacter()
             2 -> println("You Chose Update Character")
             3 -> println("You Chose List All Characters")
             4 -> println("You Delete a Character")
@@ -43,4 +46,16 @@ fun menu() : Int {
     else
         -9
     return option
+}
+
+fun addCharacter(){
+    println("Add Character\n")
+    print("Enter a Name : ")
+    character.name = readLine()!!
+    print("Enter a Race : ")
+    character.race = readLine()!!
+    print("Enter a Class : ")
+    character.clss = readLine()!!
+    println("You entered [ " + character.name + " ] for name " +
+            "and [ " + character.race + " ] for race and [ "+ character.clss + " ] for class")
 }
