@@ -1,0 +1,20 @@
+[
+  {
+    "id": 8300144785614590211,
+    "name": "Test",
+    "race": "Test",
+    "clss": "Test"
+  },
+  {
+    "id": 2191661398568493715,
+    "name": "Tester",
+    "race": "Tester",
+    "clss": "Tester"
+  },
+  {
+    "id": -6820551664525954533,
+    "name": "Tester2Updated",
+    "race": "Tester2RaceUpdated",
+    "clss": "Tester2ClassUpdated"
+  }
+]
